@@ -34,8 +34,10 @@
         </a>
         <div 
             class="md:hidden absolute flex flex-col 
-            left-0 pl-4 gap-4 top-0 pt-12 font-semibold
-            w-3/4 bg-indigo-600 h-screen"
+            -left-3/4 pl-4 gap-4 top-0 pt-12
+            w-3/4 bg-indigo-600 h-screen
+            duration-200 [.menuopen_+_&]:left-0
+            text-neutral-100 font-bold text-lg"
         >
             <a href="/#portfolio">Projects</a>
             <a href="/#blog">Blog</a>
