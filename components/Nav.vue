@@ -22,26 +22,26 @@
         >
             <span 
                 class="w-11 h-1 bg-indigo-600 rounded absolute
-                duration-200 [.menuopen_>_&]:translate-y-5
-                [.menuopen_>_&]:rotate-45"
+                duration-100 [.menuopen_>_&]:translate-y-5
+                [.menuopen_>_&]:rotate-45 [.menuopen_>_&]:bg-indigo-50"
             ></span>
             <!-- <div class="w-10 h-1 bg-indigo-600 absolute mt-5 rounded"></div> -->
             <span 
                 class="w-11 h-1 bg-indigo-600 absolute mt-10 rounded
-                duration-200 [.menuopen_>_&]:-translate-y-5
-                [.menuopen_>_&]:-rotate-45"
+                duration-100 [.menuopen_>_&]:-translate-y-5
+                [.menuopen_>_&]:-rotate-45 [.menuopen_>_&]:bg-indigo-50"
             ></span>
         </a>
         <div 
-            class="md:hidden absolute flex flex-col 
+            class="md:hidden fixed flex flex-col z-10
             -left-3/4 pl-4 gap-4 top-0 pt-12
             w-3/4 bg-indigo-600 h-screen
-            duration-200 [.menuopen_+_&]:left-0
+            duration-100 [.menuopen_+_&]:left-0 ease-in
             text-neutral-100 font-bold text-lg"
         >
-            <a href="/#portfolio">Projects</a>
-            <a href="/#blog">Blog</a>
-            <a href="/#contact">Contact</a>
+            <a class="no-underline" href="/#portfolio">Projects</a>
+            <a class="no-underline" href="/#blog">Blog</a>
+            <a class="no-underline" href="/#contact">Contact</a>
         </div>
         <!-- /Mobile nav -->
     </nav>
