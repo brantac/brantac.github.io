@@ -1,7 +1,7 @@
 <script setup lang="ts">
   useHead({
     bodyAttrs: {
-      class: "[&:has(a.menuopen)]:bg-gray-800/50",
+      class: "bg-neutral-50 dark:bg-neutral-900 [&:has(a.menuopen)]:bg-gray-800/50 md:[&:has(a.menuopen)]:bg-neutral-50",
     }
   })
 </script>
