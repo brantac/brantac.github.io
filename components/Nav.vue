@@ -12,37 +12,40 @@
             w-3/4 md:w-full h-screen md:h-auto
             bg-neutral-50 dark:bg-neutral-900
             duration-100 [&:has(+_.menuopen)]:left-0 ease-in
-            md:relative md:flex-row md:ml-4 md:gap-4"
+            md:relative md:flex-row md:ml-4"
         >
             <a class="pl-4 py-4 md:pr-4
-                rounded
-                no-underline font-semibold text-lg
+                no-underline font-normal text-sm
                 text-zinc-500 [&.active]:text-indigo-400
-                hover:text-indigo-500 dark:hover:text-indigo-200
-                [&.active]:bg-indigo-50
-                dark:text-zinc-300
+                hover:text-indigo-500
+                [&.active]:border-solid [&.active]:border-l
+                md:[&.active]:border-l-0
+                [&.active]:border-indigo-400
+                dark:text-zinc-100
                 link-item" 
                 href="/#portfolio"
                 @click="addActive"
             >Projects</a>
             <a class="pl-4 py-4 md:pr-4
-                rounded
-                no-underline font-semibold text-lg
+                no-underline font-normal text-sm
                 text-zinc-500 [&.active]:text-indigo-400
-                hover:text-indigo-500 dark:hover:text-indigo-200
-                [&.active]:bg-indigo-50
-                dark:text-zinc-300
+                hover:text-indigo-500
+                [&.active]:border-solid [&.active]:border-l
+                md:[&.active]:border-l-0
+                [&.active]:border-indigo-400
+                dark:text-zinc-100
                 link-item" 
                 href="/#blog"
                 @click="addActive"
             >Blog</a>
             <a class="pl-4 py-4 md:pr-4
-                rounded
-                no-underline font-semibold text-lg
+                no-underline font-normal text-sm
                 text-zinc-500 [&.active]:text-indigo-400
-                hover:text-indigo-500 dark:hover:text-indigo-200
-                [&.active]:bg-indigo-50
-                dark:text-zinc-300
+                hover:text-indigo-500
+                [&.active]:border-solid [&.active]:border-l
+                md:[&.active]:border-l-0
+                [&.active]:border-indigo-400
+                dark:text-zinc-100
                 link-item" 
                 href="/#contact"
                 @click="addActive"
@@ -56,15 +59,16 @@
             @click.prevent="() => mobileNavOpen = !mobileNavOpen"
         >
             <span 
-                class="w-11 h-1 bg-indigo-400 rounded absolute
+                class="w-11 h-1 rounded absolute
+                bg-zinc-500 [.menuopen_>_&]:bg-indigo-50
                 duration-100 [.menuopen_>_&]:translate-y-5
-                [.menuopen_>_&]:rotate-45 [.menuopen_>_&]:bg-indigo-50"
+                [.menuopen_>_&]:rotate-45"
             ></span>
-            <!-- <div class="w-10 h-1 bg-indigo-600 absolute mt-5 rounded"></div> -->
             <span 
-                class="w-11 h-1 bg-indigo-400 absolute mt-10 rounded
+                class="w-11 h-1 absolute mt-10 rounded
+                bg-zinc-500 [.menuopen_>_&]:bg-indigo-50
                 duration-100 [.menuopen_>_&]:-translate-y-5
-                [.menuopen_>_&]:-rotate-45 [.menuopen_>_&]:bg-indigo-50"
+                [.menuopen_>_&]:-rotate-45"
             ></span>
         </a>
         <!-- /Mobile nav -->
