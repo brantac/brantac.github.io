@@ -1,6 +1,10 @@
 <template>
     <div>
-        <h1>Welcome to the home page</h1>
+        <h1>
+            <span class="">Hi, my name is</span>
+            <span class="">Arthur Brant.</span>
+            <span class="">I build great experiences for the internet.</span>
+        </h1>
     </div>
 </template>
 
