@@ -134,6 +134,7 @@
         class="container mx-auto px-4 pt-4 md:pt-8
         [&>p:not(:last-child)]:mb-4"
     >
+        <h1>Portfolio</h1>
     </section>
     <!-- /Portfolio section -->
 </template>
