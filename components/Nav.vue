@@ -4,7 +4,7 @@
         md:justify-start items-center
         p-4"
     >
-        <div>Logo</div>
+        <div><span class="text-indigo-100">Arthur Brant</span></div>
         <!-- Mobile nav -->
         <div 
             class="flex flex-col fixed z-10 md:z-0
