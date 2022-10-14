@@ -4,7 +4,8 @@
         md:justify-start items-center
         p-4"
     >
-        <div><span class="text-indigo-100">Arthur Brant</span></div>
+        <div class="shrink-0 text-orange-5 00 font-bold"
+        >Arthur Brant</div>
         <!-- Mobile nav -->
         <div 
             class="flex flex-col fixed z-10 md:z-0
@@ -52,6 +53,7 @@
             >Contact</a>
         </div>
         <a href="#" id="_menutoggleicon"
+            data-test="toggle-button"
             class="md:hidden w-11 h-11 inline-block
             relative z-20
             group"
@@ -76,6 +78,7 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
 const mobileNavOpen = ref(false)
 const navlinkClicked = ref(false)
 
