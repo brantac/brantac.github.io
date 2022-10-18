@@ -43,7 +43,7 @@
         <!-- TODO: center button in sm and md breakpoints -->
         <button
             type="button"
-            class="bg-indigo-600 hover:bg-indigo-500
+            class="bg-indigo-600 shadow-md shadow-indigo-600/50 hover:bg-indigo-500
             text-zinc-100 font-semibold
             p-4 mt-12 rounded
             block mx-0 sm:mx-auto lg:mx-0"
@@ -129,18 +129,78 @@
     </section>
     <!-- /About section -->
     <!-- Portfolio section -->
+    <!--
+        TODO
+        1. Criar card para cada projeto
+        2. Aonde colocar as imagens no Nuxt
+        3. Adicionar sombra ao passar o mouse por cima dos cards
+        4. Colocar bordar ao redor do nome das tecnologias usadas
+        5. A imagem deve ser um link para a página do projeto
+        6. Adicionar um botão para redirecionar para a página
+        do projeto
+     -->
     <section
         id="#portfolio"
-        class="container mx-auto px-4 pt-4 md:pt-8
-        [&>p:not(:last-child)]:mb-4"
+        class="container mx-auto px-4 pt-4 md:pt-8"
     >
-        <h1>Portfolio</h1>
+        <h2 class="text-2xl lg:text-3xl font-bold
+        text-zinc-400
+        text-left sm:text-center
+        mb-8">Portfolio</h2>
+        <div class="w-full flex flex-col gap-8
+        items-start sm:items-center">
+            <div v-for="project in portfolio" :key="project.id"
+            class="max-w-lg
+            rounded ">
+                <h3 class="text-xl lg:text-2xl tracking-wide
+                sm:text-center
+                text-zinc-900 dark:text-zinc-100
+                font-bold
+                mb-4">
+                    {{ project.title }}
+                </h3>
+                <div class="flex flex-row gap-4 mb-4
+                sm:justify-center">
+                    <span v-for="tech in project.tech"
+                    class="text-sm text-zinc-500">{{ tech }}</span>
+                </div>
+                <img :src="project.thumbnail"
+                :alt="'Thumbnail for the project ' + project.title"
+                class="w-full h-auto text-zinc-900 dark:text-zinc-100
+                rounded shadow-md shadow-indigo-600/50">
+            </div>
+        </div>
     </section>
     <!-- /Portfolio section -->
 </template>
 
 <script setup lang="ts">
-
+const portfolio = [
+    {
+        id: 1,
+        title: "Portfolio pessoal",
+        tech: ["Vue 3", "TypeScript", "Nuxt"],
+        thumbnail: "/Portfolio_3.jpg"
+    },
+    {
+        id: 1,
+        title: "Portfolio pessoal",
+        tech: ["Vue 3", "TypeScript", "Nuxt"],
+        thumbnail: "/Portfolio_3.jpg"
+    },
+    {
+        id: 1,
+        title: "Portfolio pessoal",
+        tech: ["Vue 3", "TypeScript", "Nuxt"],
+        thumbnail: "/Portfolio_3.jpg"
+    },
+    {
+        id: 1,
+        title: "Portfolio pessoal",
+        tech: ["Vue 3", "TypeScript", "Nuxt"],
+        thumbnail: "/Portfolio_3.jpg"
+    },
+]
 </script>
 
 <style scoped>
