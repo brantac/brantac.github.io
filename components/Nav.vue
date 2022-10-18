@@ -4,7 +4,7 @@
         md:justify-start items-center
         p-4"
     >
-        <div class="shrink-0 text-orange-5 00 font-bold"
+        <div class="shrink-0 text-zinc-500 font-bold text-xl"
         >Arthur Brant</div>
         <!-- Mobile nav -->
         <div 
