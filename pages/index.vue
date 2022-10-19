@@ -146,7 +146,7 @@
         <h2 class="text-2xl lg:text-3xl font-bold
         text-zinc-400
         text-left sm:text-center
-        mb-8">Portfolio</h2>
+        mb-4 sm:mb-8">Projects</h2>
         <div class="w-full flex flex-col gap-8
         items-start sm:items-center">
             <div v-for="project in portfolio" :key="project.id"
@@ -156,13 +156,13 @@
                 sm:text-center
                 text-zinc-900 dark:text-zinc-100
                 font-bold
-                mb-4">
+                ">
                     {{ project.title }}
                 </h3>
                 <div class="flex flex-row gap-4 mb-4
                 sm:justify-center">
                     <span v-for="tech in project.tech"
-                    class="text-sm text-zinc-500">{{ tech }}</span>
+                    class="text-sm text-zinc-400">{{ tech }}</span>
                 </div>
                 <img :src="project.thumbnail"
                 :alt="'Thumbnail for the project ' + project.title"
