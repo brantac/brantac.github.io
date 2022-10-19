@@ -131,17 +131,15 @@
     <!-- Portfolio section -->
     <!--
         TODO
-        1. Criar card para cada projeto
-        2. Aonde colocar as imagens no Nuxt
         3. Adicionar sombra ao passar o mouse por cima dos cards
-        4. Colocar bordar ao redor do nome das tecnologias usadas
         5. A imagem deve ser um link para a página do projeto
         6. Adicionar um botão para redirecionar para a página
         do projeto
+        7. Scale images on hover
      -->
     <section
         id="#portfolio"
-        class="container mx-auto px-4 pt-4 md:pt-8"
+        class="container mx-auto px-4 pt-4 md:pt-8 pb-4"
     >
         <h2 class="text-2xl lg:text-3xl font-bold
         text-zinc-400
@@ -172,6 +170,26 @@
         </div>
     </section>
     <!-- /Portfolio section -->
+    <!-- Socials section -->
+    <section class="flex flex-row justify-center gap-4 md:gap-6
+    md:flex-col md:left-8 lg:left-12 md:fixed md:bottom-8">
+        <a href="https://twitter.com/brantac_" target="_blank">
+            <svg class="w-4 sm:w-5 md:w-6 h-4 sm:h-5 md:h-6 
+            text-zinc-400 hover:text-indigo-500
+            hover:-translate-y-1 duration-100" viewBox="0 0 256 256"><path fill="currentColor" d="M247.4 68.9A8 8 0 0 0 240 64h-30.4a47.8 47.8 0 0 0-75.2-10.1A47.7 47.7 0 0 0 120 88v6.1C79.3 83.5 46 50.7 45.7 50.3a8 8 0 0 0-8.1-1.9a8.1 8.1 0 0 0-5.5 6.2c-8.7 48.2 5.8 80.5 19.5 99.1a108.6 108.6 0 0 0 24.7 24.4c-15.3 17.3-38.9 26.3-39.1 26.4a8 8 0 0 0-3.9 11.9c.8 1.2 3.8 5.1 11.1 8.8c9.1 4.5 21.1 6.8 35.6 6.8c70.5 0 129.5-54.3 135.5-124.2l30.2-30.1a8.4 8.4 0 0 0 1.7-8.8Zm-45.3 29.7a7.8 7.8 0 0 0-2.3 5.2C195.7 166.7 143.1 216 80 216c-10.6 0-18-1.4-23.2-3.1c11.5-6.2 27.5-17 37.9-32.5a8 8 0 0 0 1-6.4a8.1 8.1 0 0 0-4.1-5.1c-.1-.1-14.9-7.8-27.6-25.3c-14.4-19.8-20.5-43.9-18.1-71.7c15.8 13 46 34.2 80.8 40a8.1 8.1 0 0 0 6.5-1.8a8.2 8.2 0 0 0 2.8-6.1V88a32 32 0 0 1 61.3-12.8a8.1 8.1 0 0 0 7.4 4.8h16Z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/brantac" target="_blank">
+            <svg class="w-4 sm:w-5 md:w-6 h-4 sm:h-5 md:h-6
+            text-zinc-400 hover:text-indigo-500
+            hover:-translate-y-1 duration-100" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"/></svg>
+        </a>
+        <a href="https://github.com/brantac" target="_blank">
+            <svg class="w-4 sm:w-5 md:w-6 h-4 sm:h-5 md:h-6
+            text-zinc-400 hover:text-indigo-500
+            hover:-translate-y-1 duration-100" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+        </a>
+    </section>
+    <!-- /Socials section -->
 </template>
 
 <script setup lang="ts">
