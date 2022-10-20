@@ -61,30 +61,21 @@
     <section
         id="#about"
         class="container mx-auto px-4 py-14
-        [&>p:not(:last-child)]:mb-4"
+        [&>p:not(:last-child)]:mb-4
+        text-base text-left sm:text-center
+        text-zinc-900 dark:text-zinc-100
+        max-w-md mx-0 sm:mx-auto"
     >
-        <p
-            class="text-base text-left sm:text-center lg:text-left
-            text-zinc-900 dark:text-zinc-100
-            max-w-md sm:mx-auto lg:mx-0"
-        >
+        <p>
             Welcome to my portfolio.
         </p>
-        <p
-            class="text-base text-left sm:text-center lg:text-left
-            text-zinc-900 dark:text-zinc-100
-            max-w-md sm:mx-auto lg:mx-0"
-        >
+        <p>
             I'm an aspiring full-stack web developer, 
             who loves to code in typeScript. Recently, 
             I've been building things in Vue.js, Node, 
             MySQL and Docker.
         </p>
-        <p
-            class="text-base text-left sm:text-center lg:text-left
-            text-zinc-900 dark:text-zinc-100
-            max-w-md sm:mx-auto lg:mx-0"
-        >
+        <p>
             As a Computer Scientist, who graduated
             in 2022, I'm curious and open to learn
             as much as I can things such as new
@@ -93,28 +84,20 @@
             and engineering, project and team
             management strategies, and so on.
         </p>
-        <p
-            class="text-base text-left sm:text-center lg:text-left
-            text-zinc-900 dark:text-zinc-100
-            max-w-md sm:mx-auto lg:mx-0"
-        >
+        <p>
             Feel free to contact me to have a chat
             about software development, projects,
             work or maybe to just have a nice talk.
         </p>
-        <p
-            class="text-base text-left sm:text-center lg:text-left
-            text-zinc-900 dark:text-zinc-100
-            max-w-md sm:mx-auto lg:mx-0"
-        >
+        <p>
             Currently, I've been building things with:
         </p>
         <ul 
             class="grid
             grid-cols-[repeat(2,minmax(0,150px))]
-            grid-rows-4 gap-y-2 sm:justify-center lg:justify-start
+            grid-rows-4 gap-y-2 sm:justify-center
             text-base text-zinc-900 dark:text-zinc-100
-            text-left
+            text-left 
             [&_li]:before:content-['_•'] [&_li]:before:text-indigo-500
             [&_li]:before:inline [&_li]:before:mr-2">
             <li class="">Vue.js 3</li>
@@ -129,14 +112,6 @@
     </section>
     <!-- /About section -->
     <!-- Portfolio section -->
-    <!--
-        TODO
-        3. Adicionar sombra ao passar o mouse por cima dos cards
-        5. A imagem deve ser um link para a página do projeto
-        6. Adicionar um botão para redirecionar para a página
-        do projeto
-        7. Scale images on hover
-     -->
     <section
         id="#portfolio"
         class="container mx-auto px-4 py-14"
