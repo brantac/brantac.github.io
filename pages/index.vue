@@ -149,7 +149,8 @@
         items-start sm:items-center">
             <div v-for="project in portfolio" :key="project.id"
             class="max-w-lg
-            rounded ">
+            rounded 
+            shadow shadow-neutral-500 p-4">
                 <h3 class="text-xl lg:text-2xl tracking-wide
                 sm:text-center
                 text-zinc-900 dark:text-zinc-100
@@ -165,7 +166,8 @@
                 <img :src="project.thumbnail"
                 :alt="'Thumbnail for the project ' + project.title"
                 class="w-full h-auto text-zinc-900 dark:text-zinc-100
-                rounded shadow-md shadow-indigo-600/50">
+                rounded">
+                <!-- rounded shadow-md shadow-indigo-600/50"> -->
             </div>
         </div>
     </section>
@@ -186,21 +188,16 @@
             software development. Get in touch through any of my
             social medias.
         </p>
-        <button
-            type="button"
+        <a
+            href="https://linkedin.com/in/brantac" target="_blank"
             class="bg-indigo-600 shadow-md shadow-indigo-600/50 hover:bg-indigo-500
             text-zinc-100 font-semibold
             p-4 mt-12 rounded
-            block mx-0 sm:mx-auto"
+            block w-max mx-0 sm:mx-auto"
         >
            Let's connect!
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                class="w-6 h-6 inline ml-1"
-            >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
-            </svg> -->
             <svg class="w-6 h-6 inline ml-1" viewBox="0 0 16 16"><path fill="currentColor" d="M4 5.5a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0ZM5.5 3a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5Zm5 3a1 1 0 1 1 2 0a1 1 0 0 1-2 0Zm1-2a2 2 0 1 0 0 4a2 2 0 0 0 0-4Zm-10 6.5A1.5 1.5 0 0 1 3 9h5a1.5 1.5 0 0 1 1.5 1.5v.112a1.38 1.38 0 0 1-.01.137a2.853 2.853 0 0 1-.524 1.342C8.419 12.846 7.379 13.5 5.5 13.5c-1.878 0-2.918-.654-3.467-1.409a2.853 2.853 0 0 1-.523-1.342a1.906 1.906 0 0 1-.01-.137V10.5Zm1 .09v.007l.004.049a1.853 1.853 0 0 0 .338.857c.326.448 1.036.997 2.658.997c1.622 0 2.332-.549 2.658-.997a1.853 1.853 0 0 0 .338-.857a.912.912 0 0 0 .004-.05V10.5A.5.5 0 0 0 8 10H3a.5.5 0 0 0-.5.5v.09Zm9 1.91c-.588 0-1.07-.09-1.46-.238a3.85 3.85 0 0 0 .361-.932c.268.101.624.17 1.099.17c1.119 0 1.578-.382 1.78-.666a1.224 1.224 0 0 0 .218-.56l.002-.028a.25.25 0 0 0-.25-.246h-2.8A2.49 2.49 0 0 0 10 9h3.25c.69 0 1.25.56 1.25 1.25v.017a1.352 1.352 0 0 1-.008.109a2.225 2.225 0 0 1-.398 1.04c-.422.591-1.213 1.084-2.594 1.084Z"/></svg>
-        </button>
+        </a>
     </section>
     <!-- /Contact -->
     <!-- Socials section -->
