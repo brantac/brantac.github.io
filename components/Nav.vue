@@ -16,7 +16,9 @@
             duration-100 [&:has(+_.menuopen)]:left-0 ease-in
             md:relative md:flex-row md:ml-4"
         >
-            <a class="pl-4 py-4 md:pr-4
+            <a v-for="link in navLinks" :key="link.id"
+            v-show="link.show"
+            class="pl-4 py-4 md:pr-4
                 no-underline font-normal text-sm
                 text-zinc-500 [&.active]:text-indigo-400
                 hover:text-indigo-500
@@ -25,33 +27,9 @@
                 [&.active]:border-indigo-400
                 dark:text-zinc-100
                 link-item" 
-                href="/#portfolio"
+                :href="'/' + link.anchor"
                 @click="addActive"
-            >Projects</a>
-            <a class="pl-4 py-4 md:pr-4
-                no-underline font-normal text-sm
-                text-zinc-500 [&.active]:text-indigo-400
-                hover:text-indigo-500
-                [&.active]:border-solid [&.active]:border-l
-                md:[&.active]:border-l-0
-                [&.active]:border-indigo-400
-                dark:text-zinc-100
-                link-item" 
-                href="/#blog"
-                @click="addActive"
-            >Blog</a>
-            <a class="pl-4 py-4 md:pr-4
-                no-underline font-normal text-sm
-                text-zinc-500 [&.active]:text-indigo-400
-                hover:text-indigo-500
-                [&.active]:border-solid [&.active]:border-l
-                md:[&.active]:border-l-0
-                [&.active]:border-indigo-400
-                dark:text-zinc-100
-                link-item" 
-                href="/#contact"
-                @click="addActive"
-            >Contact</a>
+            >{{ link.title }}</a>
         </div>
         <a href="#" id="_menutoggleicon"
             data-test="toggle-button"
@@ -82,6 +60,33 @@
 import { ref } from 'vue'
 const mobileNavOpen = ref(false)
 const navlinkClicked = ref(false)
+
+const navLinks = [
+    {
+        id: 1,
+        title: "About",
+        anchor: "#about",
+        show: true
+    },
+    {
+        id: 2,
+        title: "Portfolio",
+        anchor: "#portfolio",
+        show: true
+    },
+    {
+        id: 3,
+        title: "Articles",
+        anchor: "#articles",
+        show: false
+    },
+    {
+        id: 4,
+        title: "Contact",
+        anchor: "#contact",
+        show: true
+    },
+]
 
 const addActive = (e) => {
     if (!e.target.classList.contains('active')) {
