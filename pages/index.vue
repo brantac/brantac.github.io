@@ -60,8 +60,8 @@
     <!-- /Hero section -->
     <!-- About section -->
     <section
-        id="#about"
-        class="container mx-auto px-4 py-14
+        id="about"
+        class="container px-4 py-14
         [&>p:not(:last-child)]:mb-4
         text-base text-left sm:text-center
         text-zinc-900 dark:text-zinc-100
@@ -114,7 +114,7 @@
     <!-- /About section -->
     <!-- Portfolio section -->
     <section
-        id="#portfolio"
+        id="portfolio"
         class="container mx-auto px-4 py-14"
     >
         <h2 class="text-2xl lg:text-3xl font-medium
@@ -150,8 +150,8 @@
     </section>
     <!-- /Portfolio section -->
     <!-- Contact -->
-    <section class="
-    py-14 px-4">
+    <section id="contact"
+    class="py-14 px-4">
         <h2 class="text-2xl lg:text-3xl font-bold
         text-zinc-400
         text-left sm:text-center mb-4 sm:mb-8">Contact</h2>
@@ -179,7 +179,8 @@
     </section>
     <!-- /Contact -->
     <!-- Socials section -->
-    <section class="flex flex-row justify-center gap-4 sm:gap-6
+    <section
+    class="flex flex-row justify-center gap-4 sm:gap-6
     sm:flex-col
     sm:left-8 lg:left-12 sm:fixed sm:bottom-8
     mb-8 sm:mb-0">
