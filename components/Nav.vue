@@ -34,7 +34,8 @@
         <a href="#" id="_menutoggleicon"
             data-test="toggle-button"
             class="md:hidden w-11 h-11 inline-block
-            relative z-20
+            fixed top-4 right-4 sm:right-14
+             z-20
             group"
             :class="{menuopen: mobileNavOpen}"
             @click.prevent="() => mobileNavOpen = !mobileNavOpen"
