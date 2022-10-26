@@ -209,25 +209,7 @@
 const portfolio = [
     {
         id: 1,
-        title: "Portfolio pessoal",
-        tech: ["Vue 3", "TypeScript", "Nuxt"],
-        thumbnail: "/Portfolio_3.jpg"
-    },
-    {
-        id: 1,
-        title: "Portfolio pessoal",
-        tech: ["Vue 3", "TypeScript", "Nuxt"],
-        thumbnail: "/Portfolio_3.jpg"
-    },
-    {
-        id: 1,
-        title: "Portfolio pessoal",
-        tech: ["Vue 3", "TypeScript", "Nuxt"],
-        thumbnail: "/Portfolio_3.jpg"
-    },
-    {
-        id: 1,
-        title: "Portfolio pessoal",
+        title: "Personal portfolio website",
         tech: ["Vue 3", "TypeScript", "Nuxt"],
         thumbnail: "/Portfolio_3.jpg"
     },
