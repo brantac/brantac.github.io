@@ -1,7 +1,8 @@
 <script setup lang="ts">
   useHead({
     htmlAttrs: {
-      lang: 'en'
+      lang: 'en',
+      class: 'scroll-smooth'
     },
     bodyAttrs: {
       class: `bg-neutral-50 dark:bg-neutral-900
