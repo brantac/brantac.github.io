@@ -36,10 +36,10 @@
                 text-zinc-900 dark:text-zinc-100
                 max-w-md sm:mx-auto lg:mx-0"
             >
-                I'm a fullstack web developer who wants to build
-                great experiences for people who wants to showcase
-                their portfolio, art or business. Currently, I'm working
-                as a freelancer.
+                I'm a fullstack web developer who wants to help
+                people to showcase their businesses, attract attention,
+                highlight their art, by building pleasant and
+                modern experiences.
             </p>
             <!-- TODO: center button in sm and md breakpoints -->
             <a
@@ -72,19 +72,29 @@
                 Welcome to my portfolio.
             </p>
             <p>
-                I'm an aspiring full-stack web developer,
-                who loves to code in typeScript. Recently,
-                I've been building things in Vue.js, Node,
-                MySQL and Docker.
+                I'm an aspiring fullstack web developer
+                who loves to code in TypeScript (I'm
+                still trying to make sense of generics), fell
+                in love for Vue a long time ago, constantly
+                seeks for the best solution possible in every
+                problem, tries to come up with beautiful designs
+                (and fails constantly).
             </p>
             <p>
                 As a Computer Scientist, who graduated
                 in 2022, I'm curious and open to learn
                 as much as I can things such as new
                 programming languages, frameworks,
-                developer tools, software archtecture
+                developer tools, software architecture
                 and engineering, project and team
                 management strategies, and so on.
+            </p>
+            <p>
+                I'm open minded, empathetic, curious,
+                analytical, and I always try to see
+                the big picture of anything. If I'm
+                not coding, I'm probably reading some news
+                or playing online games.
             </p>
             <p>
                 Feel free to contact me to have a chat
