@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --navbar-height: 60px;
+    --hero-section-height: calc(100dvh - var(--navbar-height));
+}
+
+@media (min-width: 640px) {
+    :root {
+        --navbar-height: 80px;
+    }
+}
