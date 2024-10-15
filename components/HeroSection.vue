@@ -1,5 +1,5 @@
 <template>
-    <section id="about" class="container mx-auto px-4 min-h-[var(--hero-section-height)] flex flex-col items-center lg:flex-row justify-evenly"
+    <section id="about" class="container mx-auto px-4 min-h-[var(--hero-section-height)] flex flex-col items-center lg:flex-row justify-evenly pb-14 lg:pb-0"
     >
         <div class="hero-left-side sm:flex-1 w-full lg:max-w-[50%] min-h-[var(--hero-section-height)] flex flex-col justify-center items-center">
             <h1 class="text-center text-4xl md:text-5xl lg:text-6xl font-medium"
