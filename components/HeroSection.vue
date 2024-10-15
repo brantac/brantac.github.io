@@ -1,8 +1,8 @@
 <template>
-    <section id="about" class="container mx-auto px-4 min-h-[var(--hero-section-height)] flex flex-col items-center lg:flex-row justify-between md:gap-8"
+    <section id="about" class="container mx-auto px-4 min-h-[var(--hero-section-height)] flex flex-col items-center lg:flex-row justify-evenly"
     >
-        <div class="hero-left-side sm:flex-1 w-full lg:max-w-[50%] min-h-[var(--hero-section-height)] flex flex-col justify-center">
-            <h1 class="text-center lg:text-left text-4xl md:text-5xl lg:text-6xl font-medium"
+        <div class="hero-left-side sm:flex-1 w-full lg:max-w-[50%] min-h-[var(--hero-section-height)] flex flex-col justify-center items-center">
+            <h1 class="text-center text-4xl md:text-5xl lg:text-6xl font-medium"
             >
                 <span
                     class="block
@@ -27,7 +27,7 @@
                 </span>
             </h1>
             <p
-                class="text-center lg:text-left
+                class="text-center
                 text-xl lg:text-2xl font-medium text-zinc-900 dark:text-zinc-100"
             >
                 I build great experiences for the internet
