@@ -7,7 +7,7 @@
         <div class="w-full flex flex-col gap-12
         items-start sm:items-center">
             <a :href="project.link" target="_blank" v-for="project in portfolio" :key="project.id"
-            class="max-w-lg rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 shadow-md shadow-zinc-300/50 dark:shadow-zinc-700/50 hover:shadow-lg hover:shadow-zinc-300/50 hover:dark:shadow-zinc-700/50">
+            class="max-w-lg rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 shadow-md shadow-zinc-300/50 dark:shadow-zinc-700/50 hover:shadow-lg hover:shadow-zinc-300/50 hover:dark:shadow-zinc-700/50 transition">
                 <div class="px-4 pt-4">
                     <h3 class="text-xl lg:text-2xl tracking-wide text-zinc-950 dark:text-zinc-50 font-medium">
                         {{ project.title }}
