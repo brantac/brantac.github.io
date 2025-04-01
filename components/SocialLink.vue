@@ -1,5 +1,5 @@
 <template>
-    <a :href="hrefs[social]" target="_blank" :class="style[social]" class="underline underline-offset-2 w-5 sm:w-6 h-5 sm:h-6 text-indigo-500  duration-100">{{ social }}</a>
+    <a :href="hrefs[social]" target="_blank" :class="style[social]" class="underline underline-offset-2 w-5 sm:w-6 h-5 sm:h-6 text-zinc-900 hover:text-indigo-500 dark:text-zinc-100 duration-100 font-medium">{{ social }}</a>
 </template>
 
 <script setup lang="ts">
