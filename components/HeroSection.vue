@@ -33,19 +33,17 @@
                 I build great experiences for the internet
             </p>
         </div>
-        <div class="hero-right-side sm:flex-1 w-fit lg:max-w-[40%]">
+        <div class="hero-right-side sm:flex-1 w-fit lg:max-w-[40%] rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 shadow-lg p-4">
             <p
-                class="text-lg font-medium
-                text-zinc-900 dark:text-zinc-100"
+                class="text-xl font-bold text-zinc-900 dark:text-zinc-100"
             >I am</p>
-            <ul class="text-lg space-y-2 mb-4">
+            <ul class="text-xl space-y-2 mb-4">
                 <ListItem>a Computer Scientist</ListItem>
                 <ListItem>a Fullstack web developer</ListItem>
                 <ListItem>Curious</ListItem>
             </ul>
-            <p class="text-lg font-medium
-                text-zinc-900 dark:text-zinc-100">I know</p>
-            <ul class="text-lg space-y-2">
+            <p class="text-xl font-bold text-zinc-900 dark:text-zinc-100">I know</p>
+            <ul class="text-xl space-y-2">
                 <ListItem>Java</ListItem>
                 <ListItem>Vue.js</ListItem>
                 <ListItem>Node</ListItem>
