@@ -1,26 +1,38 @@
 <template>
     <section
         id="portfolio"
-        class="container mx-auto px-4 py-14"
+        class="container mx-auto px-6 lg:px-12 py-16"
     >
-        <h2 class="text-2xl lg:text-4xl font-medium text-zinc-900 dark:text-zinc-100 text-left sm:text-center mb-4 sm:mb-12">Portfolio</h2>
-        <div class="w-full flex flex-col gap-12
-        items-start sm:items-center">
-            <a :href="project.link" target="_blank" v-for="project in portfolio" :key="project.id"
-            class="max-w-lg rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 shadow-md shadow-zinc-300/50 dark:shadow-zinc-700/50 hover:shadow-lg hover:shadow-zinc-300/50 hover:dark:shadow-zinc-700/50 transition">
-                <div class="px-4 pt-4">
-                    <h3 class="text-xl lg:text-2xl tracking-wide text-zinc-950 dark:text-zinc-50 font-medium">
+        <h2 class="text-4xl lg:text-5xl font-bold text-zinc-900 dark:text-zinc-100 text-center mb-12">
+            Portfolio
+        </h2>
+        <div class="w-full flex flex-col gap-12 items-center">
+            <a
+                :href="project.link"
+                target="_blank"
+                v-for="project in portfolio"
+                :key="project.id"
+                class="max-w-lg rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 shadow-lg p-6 hover:shadow-xl transition"
+            >
+                <div class="mb-4">
+                    <h3 class="text-2xl lg:text-3xl font-bold text-zinc-900 dark:text-zinc-100">
                         {{ project.title }}
                     </h3>
-                    <div class="flex flex-row gap-4">
-                        <span v-for="tech in project.tech"
-                        class="text-sm font-medium text-zinc-500 dark:text-zinc-400">{{ tech }}</span>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                        <span
+                            v-for="tech in project.tech"
+                            :key="tech"
+                            class="text-sm font-medium text-zinc-500 dark:text-zinc-400"
+                        >
+                            {{ tech }}
+                        </span>
                     </div>
                 </div>
-                <img :src="project.thumbnail"
-                :alt="'Thumbnail for the project ' + project.title"
-                class="w-full h-auto text-zinc-900 dark:text-zinc-100
-                rounded-3xl p-4 pt-4">
+                <img
+                    :src="project.thumbnail"
+                    :alt="'Thumbnail for the project ' + project.title"
+                    class="w-full h-auto rounded-lg"
+                />
             </a>
         </div>
     </section>

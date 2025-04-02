@@ -1,8 +1,12 @@
 <template>
-    <section id="contact"
-        class="py-14 px-4">
-        <h2 class="text-2xl lg:text-4xl font-medium text-zinc-900 dark:text-zinc-100 text-left sm:text-center mb-4 sm:mb-8">Socials</h2>
-        <p class="text-lg max-w-md sm:mx-auto text-zinc-900 dark:text-zinc-100 text-left sm:text-center">
+    <section
+        id="contact"
+        class="container mx-auto px-6 lg:px-12 py-16"
+    >
+        <h2 class="text-4xl lg:text-5xl font-bold text-zinc-900 dark:text-zinc-100 text-center mb-12">
+            Socials
+        </h2>
+        <p class="text-lg md:text-xl max-w-lg text-zinc-700 dark:text-zinc-300 text-center mx-auto">
             Find me on <SocialLink social="linkedin" /> and on <SocialLink social="github" />.
         </p>
     </section>
