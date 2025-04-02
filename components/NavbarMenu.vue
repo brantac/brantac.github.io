@@ -1,12 +1,16 @@
 <template>
     <nav
-        class="container h-navbar mx-auto flex flex-row justify-between md:justify-start items-center px-4">
-        <div class="shrink-0 font-bold text-xl text-zinc-400">Arthur Brant</div>
+        id="navbar"
+        class="container mx-auto px-6 lg:px-12 py-4 flex flex-row justify-between items-center"
+    >
+        <div class="shrink-0 font-bold text-2xl text-zinc-900 dark:text-zinc-100">
+            Arthur Brant
+        </div>
 
         <!-- Navigation Links -->
         <div
             id="nav-menu"
-            class="md:ml-4 fixed md:relative z-10 md:z-0 left-0 top-0 w-full md:w-auto h-screen md:h-auto bg-neutral-50 dark:bg-neutral-900 duration-300 transform transition-transform"
+            class="fixed md:relative z-10 md:z-0 left-0 top-0 w-full md:w-auto h-screen md:h-auto bg-neutral-50 dark:bg-neutral-900 duration-300 transform transition-transform"
             :class="mobileNavOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'"
         >
             <div
@@ -15,7 +19,7 @@
                 <a
                     v-for="link in navLinks"
                     :key="link.id"
-                    class="pl-4 py-4 md:pr-4 no-underline font-medium text-xl text-zinc-900 [&.active]:text-indigo-500 hover:text-indigo-500 dark:text-zinc-100" 
+                    class="px-4 py-2 md:px-6 md:py-3 text-lg font-medium text-zinc-900 dark:text-zinc-100 hover:text-indigo-500 dark:hover:text-indigo-400 transition"
                     :href="link.anchor"
                     @click="handleLinkClick"
                 >{{ link.title }}</a>
@@ -32,11 +36,11 @@
             aria-label="Toggle navigation"
         >
             <span 
-                class="w-8 h-1 rounded bg-zinc-900  dark:bg-zinc-100 transition-all duration-300 transform"
+                class="w-8 h-1 rounded bg-zinc-900 dark:bg-zinc-100 transition-all duration-300 transform"
                 :class="mobileNavOpen ? 'rotate-45 translate-y-1/2' : ''"
             ></span>
             <span 
-                class="w-8 h-1 rounded bg-zinc-900  dark:bg-zinc-100 transition-all duration-300 transform"
+                class="w-8 h-1 rounded bg-zinc-900 dark:bg-zinc-100 transition-all duration-300 transform"
                 :class="mobileNavOpen ? '-rotate-45 -translate-y-1/2 mt-0' : 'mt-1'"
             ></span>
         </button>
@@ -73,7 +77,3 @@ const handleLinkClick = () => {
     mobileNavOpen.value = false;
 }
 </script>
-
-<style scoped>
-
-</style>
