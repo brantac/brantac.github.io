@@ -15,7 +15,7 @@ const hrefs = {
 }
 
 const style = {
-    "linkedin": "hover:text-indigo-700",
-    "github": "hover:text-indigo-700",
+    "linkedin": "",
+    "github": "",
 }
 </script>
