@@ -1,10 +1,7 @@
 <template>
     <nav
-        class="container h-navbar mx-auto flex flex-row justify-between md:justify-start items-center px-4"
-    >
-        <div class="shrink-0 font-bold text-xl
-        text-gray-400 dark:text-gray-300"
-        >Arthur Brant</div>
+        class="container h-navbar mx-auto flex flex-row justify-between md:justify-start items-center px-4">
+        <div class="shrink-0 font-bold text-xl text-zinc-400">Arthur Brant</div>
 
         <!-- Navigation Links -->
         <div
@@ -18,7 +15,7 @@
                 <a
                     v-for="link in navLinks"
                     :key="link.id"
-                    class="pl-4 py-4 md:pr-4 no-underline font-medium text-base lg:text-lg text-zinc-900 [&.active]:text-indigo-500 hover:text-indigo-500 dark:text-zinc-100" 
+                    class="pl-4 py-4 md:pr-4 no-underline font-medium text-xl text-zinc-900 [&.active]:text-indigo-500 hover:text-indigo-500 dark:text-zinc-100" 
                     :href="link.anchor"
                     @click="handleLinkClick"
                 >{{ link.title }}</a>
