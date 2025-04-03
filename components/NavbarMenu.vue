@@ -10,20 +10,16 @@
         <!-- Navigation Links -->
         <div
             id="nav-menu"
-            class="fixed md:relative z-10 md:z-0 left-0 top-0 w-full md:w-auto h-screen md:h-auto bg-neutral-50 dark:bg-neutral-900 duration-300 transform transition-transform"
+            class="fixed md:relative z-10 md:z-0 left-0 top-0 w-full md:w-auto h-screen md:h-auto bg-neutral-50 dark:bg-neutral-900 duration-300 transform transition-transform flex flex-col md:flex-row items-center justify-center md:justify-start gap-4 md:gap-0 p-0"
             :class="mobileNavOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'"
         >
-            <div
-                class="flex flex-col md:flex-row items-center h-full md:h-auto pt-20 md:pt-0"
-            >
-                <a
-                    v-for="link in navLinks"
-                    :key="link.id"
-                    class="px-4 py-2 md:px-6 md:py-3 text-lg font-medium text-zinc-900 dark:text-zinc-100 hover:text-indigo-500 dark:hover:text-indigo-400 transition"
-                    :href="link.anchor"
-                    @click="handleLinkClick"
-                >{{ link.title }}</a>
-            </div>
+            <a
+                v-for="link in navLinks"
+                :key="link.id"
+                class="px-4 py-2 md:px-6 md:py-3 text-lg font-medium text-zinc-900 dark:text-zinc-100 hover:text-indigo-500 dark:hover:text-indigo-400 transition"
+                :href="link.anchor"
+                @click="handleLinkClick"
+            >{{ link.title }}</a>
         </div>
 
         <!-- Menu toggle -->
